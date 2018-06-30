@@ -1,0 +1,314 @@
+.first-section-banner, .first-section-side {
+    height: 100vh;
+    width: 100%;
+}
+
+.first-section-banner {
+    overflow: hidden;
+}
+
+.first-section-banner-half {
+    height: 50vh;
+}
+
+.title-section {
+    padding: 100px 0;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.cover-title {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    height: 200px;
+    margin: 0 !important;
+    font-size: 4.5vw;
+    letter-spacing: 0.6rem;
+    text-align: center;
+    padding: 30px;
+}
+@media screen and (max-width: 576px){
+    .cover-title{
+        font-size: 1.2em;
+    }
+}
+
+.transparent-title {
+
+    color: black;
+    mix-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.section-transparent-text-fit {
+    margin-top: -200px;
+}
+
+.footer {
+    height: 300px;
+}
+
+.mask {
+    transition: all .4s ease-in-out;
+    background: url("/src/img/Camille-11.jpg") 50% 50%;
+    background-size: cover;
+    filter:contrast(1);
+
+
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}
+
+.section-hover:hover .mask {
+    transform: scale(1.1, 1.1);
+    filter:contrast(1.1);
+
+}
+
+.gallery-frame {
+    height: 80vh;
+}
+
+/*---------------*/
+
+button:focus {
+    outline: 0;
+}
+
+.grid {
+
+    background-color: black;
+}
+
+.grid-item {
+    background: black;
+
+}
+
+.grid-item > img {
+    padding-bottom: 5px;
+
+}
+
+@media only screen and (max-width: 575px) {
+    .grid-item > img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .grid-item > img {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .grid-item > img {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .grid-item > img {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+    .grid-item > img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .grid-item > img {
+        width: 400px;
+    }
+}
+
+/*--------------*/
+
+.slideshow {
+    position: relative;
+    height: 100vh;
+}
+
+.slideshow * {
+    outline: none;
+}
+
+.slideshow .item {
+    height: 100%;
+    position: relative;
+}
+
+.slideshow .item span {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 0 5%;
+    position: relative;
+
+
+
+}
+
+.slideshow .item span:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+
+}
+
+.slick-active span {
+    animation: 8s cssAnimation linear;
+
+}
+
+@keyframes cssAnimation {
+    0% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+
+.carousel-description {
+    font-size: 50px;
+    color: white;;
+    position: absolute;
+    top:40%;
+    left:5%;
+    text-align: center;
+    z-index: 1000;
+
+
+}
+.carousel-description-text{
+    font-size: 18px;
+    z-index: 1000;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    text-align: left;
+}
+
+
+/*---------------*/
+a{
+    text-decoration: none;
+}
+/*--------------------*/
+.fade-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+
+}
+
+.fade-enter.fade-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s ease-in;
+
+}
+
+.fade-exit {
+    opacity: 1;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    transform: translateX(0);
+
+
+}
+
+.fade-exit.fade-exit-active {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+/*----------------------- icon scroll ---------*/
+.icon-scroll{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    word-break: normal !important;
+    margin-bottom: 45px;
+    display: inherit;
+    margin-top: 82vh;
+
+}
+.icon-scroll-text{
+    font-size: 9px;
+    margin-top: 5px;
+    min-width: 80px;
+    letter-spacing: 0.8rem;
+    word-wrap: normal !important;
+}
+.icon-scroll-arrow{
+    width: 79px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.icon-scroll-arrow:before{
+    top: 7px;
+    right: 3px;
+    height: 11px;
+    width: 11px;
+    border: 1px solid #333;
+    content: '';
+    display: block;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    position: absolute;
+    line-height:36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-transform: none;
+    vertical-align: middle;
+
+}
+.icon-scroll-arrow:after{
+    top: 12px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    content: '';
+    display: block;
+    background: #333;
+    position: absolute;
+    line-height: 36px;
+
+}
+
+@media screen and (max-width: 767px){
+    .icon-scroll-text{
+        margin-right: 15px !important;
+    }
+    .icon-scroll-arrow{
+        transform: scale(0.85);
+    }
+}

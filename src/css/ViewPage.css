@@ -1,0 +1,66 @@
+.text-block p {
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 80px;
+}
+
+.full-page-banner {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.view-section {
+    min-height: 400px;
+}
+.view-section-background {
+    background: url('../img/Camille-9.jpg') 50% no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.view-section p {
+    margin: 0 !important;
+    padding: 0 80px;
+}
+.view-section-p{
+    margin: 0 !important;
+    padding: 10px 80px;
+}
+
+@media screen and (max-width: 768px){
+    .view-section-p{
+        padding: 10px 40px;
+    }
+}
+
+.spacer{
+    margin: 5vw 0;
+}
+
+.hover-resize {
+    overflow: hidden;
+}
+
+.hover-resize:after {
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/src/img/Camille-1.jpg') 100%;
+    background-size: cover;
+
+}
+
+.hover-resize:hover {
+
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
